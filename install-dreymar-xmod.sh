@@ -4,7 +4,7 @@
 ## ===  INSTALL-DREYMAR-XMOD.sh for DreymaR's XKB modifications  ===
 ## ===         by Øystein Bech "DreymaR" Gadmar, -2016           ===
 ## =================================================================
-# 
+#
 HeadStr="DreymaR's Big Bag Of Tricks install script (by GadOE, 2016-06)"
 DescStr=\
 "\e[1mShell script to apply DreymaR's changes to the X keyboard files:\e[0m\n"\
@@ -24,7 +24,7 @@ DescStr=\
 "  - See setxkb.sh help for more info on ShortStr syntax.\n"\
 "- With '-?', list further instructions and default values.\n"\
 "- See http://forum.colemak.com/viewtopic.php?id=1438 for more info\n"
-# 
+#
 FootStr="Happy xkb-hacking! ~ Øystein Bech 'DreymaR' Gadmar"
 #"- With '-i <dir>', specify a directory path/name to install in.\n"\
 #"- With '-g', also install GTK 2.0/3.0 config for XF86 Cut/Copy/Paste.\n"\
@@ -66,7 +66,7 @@ DoBackup='ifnone'		# (-n/b) Default backup behavior is "if no backups are found"
 SubDirs='all'			# (-m) Directory/-ies inside X11 to modify (e.g., 'xkb locale', 'all')
 InstGTK='no'			# (-g) Whether to install the GTK 2.0/3.0 config (if not present)
 SetXMap='no'			# (-x) Whether to run the setxkb script after installing
-SetXStr='5caw us us'	# (--) Shortcut string for setxkb - 'kbd loc sym' (model layout eD-variant)
+SetXStr='5ca us us'	# (--) Shortcut string for setxkb - 'kbd loc sym' (model layout eD-variant)
 ## NOTE: '# (-a)' means that the value can be set by option argument '-a <value>'
 
 HelpStr="\e[1mUsage: bash ${MyNAME} [optional args] [<kbd> [<loc> <sym>]]\e[0m\n"\
@@ -152,7 +152,7 @@ while getopts "obngxm:i:d:t:r:h?" cmdarg; do
 		h)		PrintHelpAndExit 0	;;
 		\?)		PrintHelpAndExit 0	;;
 		:)		PrintHelpAndExit 1	;;
-#		s)	SetXStr="$OPTARG"		
+#		s)	SetXStr="$OPTARG"
 #			SetXMap='yes'			;;
 	esac
 done

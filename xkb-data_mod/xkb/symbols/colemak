@@ -182,7 +182,7 @@ xkb_symbols "cmk_ed_symbols" {
     key <AC11> { [    apostrophe,      quotedbl,          dead_acute,               U2032 ] }; // '"
     key <BKSL> { [     backslash,           bar,          dead_grave,           brokenbar ] }; // \|
     // U2032 prime
-    key <LSGT> { [            oe,            OE,              oslash,            Ooblique ] }; // <>
+    key <LSGT> { [dead_diaeresis,            OE,              oslash,            Ooblique ] }; // <>
     key <AB08> { [         comma,          less,        dead_cedilla,       lessthanequal ] }; // ,
     key <AB09> { [        period,       greater,       dead_abovedot,    greaterthanequal ] }; // .
     key <AB10> { [         slash,      question,         dead_stroke,        questiondown ] }; // /?

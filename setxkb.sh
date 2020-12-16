@@ -40,14 +40,14 @@ X11DIR='/usr/share/X11'; [ -d "${X11DIR}" ] || X11DIR='/usr/lib/X11'
 XKBmodel=pc105aw-sl			# ISO-105 keyboard w/ CurlAngleWide(Slash) mod
 #~ XKBlayout='us(cmk_ed_us),gr(colemak),ru(colemak)'	# Multiple layouts
 XKBlayout='us(cmk_ed_us)'	# US English Colemak[eD]'Universal Symbols' layout
-XKBoption='misc:extend,lv5:caps_switch_lock,grp:shifts_toggle,compose:menu'
+XKBoption='misc:extend,lv5:ralt_switch_lock'
 VerboseLvl=9				# (-v) How much info should setxkbmap print out?
 KeepXKM='no'				# (-k) Retain old /var/lib/xkb/server-*.xkm files?
 XKBdir="${X11DIR}/xkb"		# (-d) The xkb-type dir to run setxkbmap from
 AddCmd='no'					# (-a) Add setxkbmap cmd to file?
 AddDefault="${HOME}/.bashrc"
 AddCmdTo=${AddDefault}		# (-f) File (such as '~/.bashrc') to add setxkbmap cmd to
-SetXStr='' #'5caw us us'	# (--) Shortcut string for setxkb (model locale eD-variant)
+SetXStr='5ca us us' #'5caw us us'	# (--) Shortcut string for setxkb (model locale eD-variant)
 ## NOTE: '# (-a)' means that the value can be set by option argument '-a <value>'
 
 HelpStr="\e[1mUsage: bash ${MyNAME} [optional args] [<kbd> [<loc> <sym>]]\e[0m\n"\

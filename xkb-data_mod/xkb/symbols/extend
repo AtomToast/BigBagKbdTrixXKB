@@ -271,24 +271,24 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Cmk L
     key <AD08> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Up                   , Up                    , //  ↑
+                   Page_Down            , Page_Down             , //  ↑
                    KP_5                 , U21D4                ], // KP_5 ↔ ⇔
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<UP>)   , Redirect(key=<UP>)    , // <UP>
+                   Redirect(key=<PGDN>)   , Redirect(key=<PGDN>)    , // <UP>
                    NoAction()           , NoAction()           ]
                };  // Cmk U
     key <AD09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   End                  , End                   , // End
+                   Page_Up              , Page_Up               , // End
                    KP_6                 , U21D2                ], // KP_6 → ⇒
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<END>)  , Redirect(key=<END>)   , // <END>
+                   Redirect(key=<PGUP>)  , Redirect(key=<PGUP>)   , // <END>
                    NoAction()           , NoAction()           ]
                };  // Cmk Y
     key <AD10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Delete               , Delete                , // Del
+                   End                  , End                   , // Del
                    KP_Add               , KP_Add               ], // KP_+
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<DELE>) , Redirect(key=<DELE>)  , // <DELE>
+                   Redirect(key=<END>) , Redirect(key=<END>)  , // <DELE>
                    NoAction()           , NoAction()           ]
                };  // ; :
     key <AD11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
@@ -370,24 +370,24 @@ xkb_symbols "lv5" {
                    NoAction()           , NoAction()           ]
                };  // Cmk E
     key <AC09> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Right                , Right                 , //  →
+                   Up                   , Up                    , //  →
                    KP_3                 , U21D8                ], // KP_3 ↘ ⇘
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<RGHT>) , Redirect(key=<RGHT>)  , // <RGHT>
+                   Redirect(key=<UP>) , Redirect(key=<UP>)  , // <RGHT>
                    NoAction()           , NoAction()           ]
                };  // Cmk I
     key <AC10> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   BackSpace            , BackSpace             , // Back
+                   Right                , Right                 , // Back
                    KP_Enter             , KP_Enter             ], // KP_Enter
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<BKSP>) , Redirect(key=<BKSP>)  , // <BKSP>
+                   Redirect(key=<RGHT>) , Redirect(key=<RGHT>)  , // <BKSP>
                    NoAction()           , NoAction()           ]
                };  // Cmk O
     key <AC11> { symbols[Group1]=[ NoSymbol , NoSymbol , NoSymbol , NoSymbol ,
-                   Menu                 , Menu                  , // Menu
+                   Right                , Right                 , // Menu
                    apostrophe           , quotedbl             ], // ' "
                  actions[Group1]=[NoAction(),NoAction(),NoAction(),NoAction(),
-                   Redirect(key=<MENU>) , Redirect(key=<MENU>)  , // <MENU>/<COMP>
+                   Redirect(key=<RGHT>) , Redirect(key=<RGHT>)  , // <MENU>/<COMP>
                    NoAction()           , NoAction()           ]
                };  // ' "
 
@@ -582,12 +582,12 @@ xkb_symbols "lv5" {
 //xkb_symbols "overlay_full" {
 ////    name[Group1]= "Extend layer";
 
-//    key <ESC>  { overlay1 = <CAPS> }; 
-//    key <AE01> { overlay1 = <FK01> }; 
-//    key <AE02> { overlay1 = <FK02> }; 
-//    key <AE03> { overlay1 = <FK03> }; 
-//    key <AE04> { overlay1 = <FK04> }; 
-//    key <AD01> { overlay1 = <ESC>  }; 
+//    key <ESC>  { overlay1 = <CAPS> };
+//    key <AE01> { overlay1 = <FK01> };
+//    key <AE02> { overlay1 = <FK02> };
+//    key <AE03> { overlay1 = <FK03> };
+//    key <AE04> { overlay1 = <FK04> };
+//    key <AD01> { overlay1 = <ESC>  };
 //    key <AD02> { overlay1 = <I185> }; // KEY_SCROLLUP  //(††)
 //    key <AD03> { overlay1 = <I166> }; // #define KEY_BACK
 //    key <I166> { [ XF86Back    ] }; //BrBck
